@@ -1,7 +1,7 @@
 import { BriefcaseBusiness, Home } from "lucide-react";
 import Filter from "./_components/filter";
 import Sort from "./_components/sort";
-import Page from "./_components/page";
+import Page from "./_components/number-page";
 import JobCard from "../../components/job-card";
 import Pagination from "./_components/pagination";
 import RecruitmentCard from "./_components/recruitment";
