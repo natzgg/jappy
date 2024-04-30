@@ -15,7 +15,7 @@ const Navigation = () => {
   const routes = [
     {
       label: "Home",
-      href: "/",
+      href: "/#",
     },
     {
       label: "Find Jobs",

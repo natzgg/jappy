@@ -7,7 +7,7 @@ import AboutSection from "./_components/about-section";
 import TopCompanies from "./_components/top-companies";
 import Footer from "@/components/footer";
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+const Layout = () => {
   return (
     <div className="h-screen">
       <Navbar />
@@ -22,7 +22,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <TopCompanies />
       </div>
       <Footer />
-      {children}
     </div>
   );
 };
