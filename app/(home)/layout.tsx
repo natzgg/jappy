@@ -6,12 +6,14 @@ import ApplicantList from "./_components/applicant-list";
 import AboutSection from "./_components/about-section";
 import TopCompanies from "./_components/top-companies";
 import Footer from "@/components/footer";
+import DemoAlert from "@/components/demo";
 
 const Layout = () => {
   return (
     <div className="h-screen">
       <Navbar />
       <div className="xl:p-16">
+        <DemoAlert />
         <Banner />
         <Separator />
         <Featured />
