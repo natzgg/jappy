@@ -10,9 +10,9 @@ const BlogDescription = () => {
         highlight your unique skills. Practice common interview questions to
         communicate effectively and confidently. Dress professionally to make a
         positive first impression. Follow up with a thank-you email to show
-        gratitude and professionalism. By following these expert tips, you'll be
-        well-equipped to navigate the interview process and increase your
-        chances of landing your dream job. Good luck!
+        gratitude and professionalism. By following these expert tips,
+        you&apos;ll be well-equipped to navigate the interview process and
+        increase your chances of landing your dream job. Good luck!
       </p>
     </div>
   );
