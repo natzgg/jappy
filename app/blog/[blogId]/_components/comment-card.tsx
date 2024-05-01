@@ -18,9 +18,9 @@ const CommentCard = () => {
         <p className="text-muted-foreground text-sm">
           This blog is a goldmine of practical advice! From mastering the
           elevator pitch to acing the follow-up, every tip resonates with my own
-          job hunting experiences. It's like having a seasoned mentor guiding
-          you through the intricacies of the interview process. Can't wait to
-          put these insights into action!
+          job hunting experiences. It&apos;s like having a seasoned mentor
+          guiding you through the intricacies of the interview process.
+          Can&apos;t wait to put these insights into action!
         </p>
       </div>
     </div>

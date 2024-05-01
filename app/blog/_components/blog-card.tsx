@@ -30,7 +30,7 @@ const BlogCard = () => {
           </h1>
           <p className="max-w-sm text-xs">
             Are you gearing up for a job interview? Nervous about making a
-            lasting impression? Don't fret! With the right preparation and
+            lasting impression? Don&apos;t fret! With the right preparation and
             mindset...
           </p>
         </div>
