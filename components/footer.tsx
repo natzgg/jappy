@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col">
           <h1 className="font-semibold text-xl">Call us</h1>
-          <span className="font-semibold text-blue-600">090 6361 0105</span>
+          <span className="font-semibold text-blue-600">090 8888 9999</span>
           <div className="mt-5 font-medium text-sm">
             <p className="text-muted-foreground">Aichi Ken, Gamagori Japan</p>
             <span>natzcunanan@gmail.com</span>
