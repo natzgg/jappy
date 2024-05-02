@@ -22,6 +22,10 @@ const Navigation = () => {
       href: "/jobs",
     },
     {
+      label: "Employer Dashboard",
+      href: "/employer/dashboard",
+    },
+    {
       label: "Blog",
       href: "/blog",
     },
