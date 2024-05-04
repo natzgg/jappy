@@ -1,14 +1,15 @@
-import InfoCard from "@/components/info-card";
+"use client";
+
 import DashboardTitle from "./_components/dashboard-title";
-import { BriefcaseBusiness } from "lucide-react";
-import PostedJobs from "./_cards/posted-jobs";
 import DashboardCards from "./_components/dashboard-cards";
+import VisitChart from "./_components/visit-chart";
 
 const EmployerDashboard = () => {
   return (
     <div className="bg-graycolor">
       <DashboardTitle />
       <DashboardCards />
+      <VisitChart />
     </div>
   );
 };
