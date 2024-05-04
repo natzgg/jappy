@@ -5,8 +5,10 @@ import Page from "./_components/number-page";
 import JobCard from "../../components/job-card";
 import Pagination from "./_components/pagination";
 import RecruitmentCard from "./_components/recruitment";
+import { faker } from "@faker-js/faker";
 
 const Jobs = () => {
+  faker.seed(111);
   return (
     <div className="mb-10">
       <div className="bg-graycolor flex items-center justify-center flex-col p-16 gap-y-3">
@@ -26,12 +28,14 @@ const Jobs = () => {
       </div>
       <div className="flex flex-col items-center justify-center gap-y-4">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <JobCard />
-          <JobCard />
-          <JobCard />
-          <JobCard />
-          <JobCard />
-          <JobCard />
+          {[...Array(9)].map((_, i) => (
+            <JobCard
+              key={i}
+              job_title={faker.person.jobTitle()}
+              location={faker.location.city()}
+              employment_type="Full Time"
+            />
+          ))}
         </div>
         <Pagination />
         <RecruitmentCard />

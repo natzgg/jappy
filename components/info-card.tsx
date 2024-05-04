@@ -36,7 +36,7 @@ const InfoCard = ({ label, count, Icon }: InfoCardProps) => {
     <div className="bg-white p-6 flex items-center justify-between gap-4 rounded-lg shadow-md w-full">
       <div
         className={cn(
-          "p-4 rounded-md w-20 h-20",
+          "p-4 rounded-md w-25 h-25",
           cardColor[0][label]?.bg,
           cardColor[0][label]?.text
         )}

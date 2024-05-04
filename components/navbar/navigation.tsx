@@ -50,7 +50,11 @@ const Navigation = () => {
       </Button>
       <ul className="hidden lg:flex gap-x-4">
         {routes.map((route, index) => (
-          <Link key={index} className="font-semibold" href={route.href}>
+          <Link
+            key={index}
+            className="font-semibold hover:bg-gray-400 p-4 rounded-lg"
+            href={route.href}
+          >
             {route.label}
           </Link>
         ))}

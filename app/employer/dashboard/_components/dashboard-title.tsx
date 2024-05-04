@@ -1,6 +1,3 @@
-import InfoCard from "@/components/info-card";
-import MenuToggle from "./menu-toggle";
-
 const DashboardTitle = () => {
   return (
     <div className="flex p-14 justify-center items-center flex-col gap-5">
@@ -10,7 +7,6 @@ const DashboardTitle = () => {
           Ready to jump back in?
         </h2>
       </div>
-      <MenuToggle />
     </div>
   );
 };

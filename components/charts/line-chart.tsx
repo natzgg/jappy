@@ -22,6 +22,9 @@ ChartJS.register(
 );
 
 export default function LineChart({ options, data }: any) {
-  console.log(options, data);
-  return <Line options={options} data={data} />;
+  return (
+    <div className="w-full">
+      <Line options={options} data={data} />
+    </div>
+  );
 }

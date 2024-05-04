@@ -5,7 +5,7 @@ import Shortlist from "../_cards/shortlist";
 
 const DashboardCards = () => {
   return (
-    <div className="p-6 grid place-items-center gap-7 sm:grid-cols-1 md:grid-cols-2">
+    <div className="p-6 grid place-items-center gap-7 sm:grid-cols-1 md:grid-cols-2 lg:flex">
       <PostedJobs />
       <Application />
       <Messages />

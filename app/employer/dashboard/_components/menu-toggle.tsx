@@ -1,16 +1,35 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
-import { AlignJustify } from "lucide-react";
+import { useEmployerSidebar } from "@/store/use-employer-sidebar";
+import { ArrowLeftFromLine, ArrowRightFromLine } from "lucide-react";
 
 const MenuToggle = () => {
+  const { collapsed, onCollapse, onExpand } = useEmployerSidebar(
+    (state) => state
+  );
+
+  const onClick = () => {
+    if (collapsed) {
+      onExpand();
+    } else {
+      onCollapse();
+    }
+  };
+
   return (
     <Button
+      onClick={() => onClick()}
       variant="ghost"
-      className="hover:bg-blue-200/60 py-2 px-6 bg-blue-200/40 md:p-8"
+      className="hidden hover:bg-transparent px-0 sm:block"
     >
-      <div className="rounded-lg">
+      <div className="rounded-lg bg-blue-200/30 p-2">
         <div className="flex items-center justify-center gap-1">
-          <AlignJustify className="w-4 h-4 text-blue-500" />
-          <span className="text-blue-500">Menu</span>
+          {!collapsed ? (
+            <ArrowLeftFromLine className="w-4 h-4 text-blue-500" />
+          ) : (
+            <ArrowRightFromLine className="w-4 h-4 text-blue-500" />
+          )}
         </div>
       </div>
     </Button>

@@ -13,7 +13,6 @@ import { useState } from "react";
 
 const Sort = () => {
   const [sort, setSort] = useState("newest");
-  console.log(sort);
 
   return (
     <div className="md:w-max md:mx-auto">
