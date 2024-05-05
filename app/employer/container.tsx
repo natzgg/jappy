@@ -5,16 +5,24 @@ import { cn } from "@/lib/utils";
 import { useEmployerSidebar } from "@/store/use-employer-sidebar";
 import { useIsClient } from "usehooks-ts";
 
-const Container = ({ children }: { children: React.ReactNode }) => {
-  const { collapsed, onCollapse, onExpand } = useEmployerSidebar(
-    (state) => state
-  );
+const Container = ({
+  children,
+  classname,
+}: {
+  children: React.ReactNode;
+  classname?: string;
+}) => {
+  const { collapsed } = useEmployerSidebar((state) => state);
   const isClient = useIsClient();
 
   if (isClient) {
     return (
       <div
-        className={cn("px-2", collapsed ? "ml-[70px]" : "ml-[70px] lg:ml-60")}
+        className={cn(
+          "px-2",
+          collapsed ? "ml-[70px]" : "ml-[70px] lg:ml-60",
+          classname
+        )}
       >
         {children}
         <Footer />
