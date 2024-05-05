@@ -41,7 +41,7 @@ const InfoCard = ({ label, count, Icon }: InfoCardProps) => {
           cardColor[0][label]?.text
         )}
       >
-        <Icon className="w-full h-auto" />
+        <Icon className="w-6 h-6" />
       </div>
       <div className="flex flex-col gap-2 p-4">
         <span
