@@ -3,10 +3,8 @@
 import {
   BriefcaseBusiness,
   Building2,
-  ClipboardList,
   Home,
   Lock,
-  Mails,
   SendHorizonal,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
@@ -37,21 +35,11 @@ const Navigation = () => {
       href: "/employer/create-job",
       icon: SendHorizonal,
     },
-    {
-      label: "Manage Jobs",
-      href: "/employer/jobs",
-      icon: BriefcaseBusiness,
-    },
-    {
-      label: "All applicants",
-      href: "/employer/applicants",
-      icon: ClipboardList,
-    },
-    {
-      label: "Messages",
-      href: "/employer/messages",
-      icon: Mails,
-    },
+    // {
+    //   label: "Manage Jobs",
+    //   href: "/employer/jobs",
+    //   icon: BriefcaseBusiness,
+    // },
     {
       label: "Change password",
       href: "/employer/password",

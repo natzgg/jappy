@@ -1,6 +1,17 @@
+import Container from "../container";
+import CreateJobForm from "./_components/create-job-form";
+
 const CreateJob = () => {
   return (
-    <h1 className="text-2xl ml-60">Create a Job.... Under Construction</h1>
+    <div className="bg-graycolor">
+      <Container>
+        <div className="text-center p-14">
+          <h1 className="font-semibold text-2xl text-center">Create a Job</h1>
+          <p className="text-sm">Add new job</p>
+        </div>
+        <CreateJobForm />
+      </Container>
+    </div>
   );
 };
 

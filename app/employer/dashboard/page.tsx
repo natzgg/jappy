@@ -5,7 +5,6 @@ import DashboardCards from "./_components/dashboard-cards";
 import VisitChart from "./_components/visit-chart";
 import Notifications from "@/components/notifications/notifications";
 import Container from "../container";
-import { Skeleton } from "@/components/ui/skeleton";
 
 const EmployerDashboard = () => {
   return (
